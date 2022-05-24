@@ -4,7 +4,7 @@ const ejs=require('ejs');
 
 
 const app=express();
-const PORT= process.env.PORT|| 5500;
+const PORT= process.env.PORT|| 6000;
 
 
 //static files
