@@ -29,6 +29,10 @@ app.get('/', (req, res)=>{
     res.render('home')
     
 }) 
+app.get('/cert', (req, res)=>{
+    res.render('certificate')
+    
+}) 
 
 app.get('/feature', (req, res)=>{
     res.render('feature')

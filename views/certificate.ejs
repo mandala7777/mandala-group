@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.14.305/build/pdf.min.js"></script>
+    <title>Mandala Group Inc.</title>
+</head>
+<body>
+
+<div class="top-bar">
+    <button class="btn" id="prev-page">
+        <i class="fas fa-arrow-circle-left"></i>  Prev Page
+    </button>
+    <span class="page-info">
+        Page <span id="page-num"></span> of <span id="page-count"></span>
+    </span>
+    <button class="btn" id="next-page">
+        Next Page    <i class="fas fa-arrow-circle-right"></i>
+    </button>    
+</div>
+<div class="wrapper">
+
+    <canvas id="pdf-render"></canvas>
+</div>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: #333;
+    }
+    .top-bar {
+        display: flex;
+        justify-content: center;
+        background: #333;
+        color: #fff;
+        padding: 1rem;
+    }
+    .btn {
+        background: coral;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 0.7rem 2rem;
+        margin: 0 auto;
+    }
+    .btn:hover {
+        opacity: 0.9;
+    }
+    .page-info {
+        margin-left: 1rem;
+    }
+    .error {
+        background: orangered;
+        color: #fff;
+        padding: 1rem;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<script src="/js/pdfreader.js"></script>
+</body>
+</html>
