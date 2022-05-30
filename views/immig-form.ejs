@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Title Page-->
+    <title>Canada Immigration Assessment Form</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Immigration Assessment Form</h2>
+                </div>
+                <div class="card-body">
+                    <form action="/assessment" method="POST">
+                        <div class="form-row m-b-55">
+                            <div class="form-row m-b-55">
+                                <div class="name">Name</div>
+                                <div class="value">
+                                    <div class="row row-refine">
+                                        <div class="col-9">
+                                          <div class="input-group-desc">
+                                                <input class="input--style-5" type="text" name="name">
+                                                <label class="label--desc">Full Name</label>
+                                            </div>  
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="input-group-desc">
+                                                <input class="input--style-5" type="number" name="age">
+                                                <label class="label--desc">Age</label>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name">Country</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="country">
+                                            <label class="label--desc">Country</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="city">
+                                            <label class="label--desc">City</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Company</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Personal</div>
+                            <div class="col-3">
+                                <div class="name">Education</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>High-School</option>
+                                            <option>Collage</option>
+                                            <option>Degree/Diploma</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="name">Status</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Single</option>
+                                            <option>Married</option>
+                                            
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            <div class="col-3">
+                                <div class="name">Employment</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>1 - 2 yrs</option>
+                                            <option>3 - 5 yrs</option>
+                                            <option>6 +yrs</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">English Language</div>
+                            <div class="col-3">
+                                <div class="name">Reading</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Basic</option>
+                                            <option>Business</option>
+                                            <option>Expert</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="name">Writing</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Basic</option>
+                                            <option>Business</option>
+                                            <option>Expert</option>
+                                            
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="name">Speaking</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Basic</option>
+                                            <option>Business</option>
+                                            <option>Expert</option>
+                                            
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            <label class="label label--block">Have you completed high school (secondary school)?*  </label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="educated">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="educated">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label label--block">Do you have any family members or relatives living in Canada?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="relatives">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="relatives">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label class="label label--block">Have you already submitted an Express Entry profile to the Government of Canada within the past 12 months?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Yes
+                                    <input type="radio" checked="checked" name="Prev_app">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">No
+                                    <input type="radio" name="Prev_app">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" onclick="hideAlert()" type="submit">Submit Form</button>
+                              
+                        </div>
+                        
+                    </form>
+                    <div style="display: none;" class="blink-message">
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Thank you very much!</strong> We will reply with your assesment report. Thanks
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function hideAlert(){
+            document.querySelector('.blink-message').style.display='block';
+        }
+    </script>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->

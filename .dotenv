@@ -1,0 +1,4 @@
+MAIL_SERVER= server66.web-hosting.com
+MAIL_USER = info@mandala-group.agency
+MAIL_PASS = 12_Thflo0R
+MAIL_PORT = 465
